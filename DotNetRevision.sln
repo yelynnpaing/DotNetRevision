@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35919.96 d17.13
+VisualStudioVersion = 17.13.35919.96
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetRevision.ConsoleApp", "DotNetRevision.ConsoleApp\DotNetRevision.ConsoleApp.csproj", "{5F084070-63A9-4EDB-86C3-E675A5612964}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentRegApi", "StudentRegApi\StudentRegApi.csproj", "{87ECA157-D6C8-4797-8064-8EA508551502}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{5F084070-63A9-4EDB-86C3-E675A5612964}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F084070-63A9-4EDB-86C3-E675A5612964}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F084070-63A9-4EDB-86C3-E675A5612964}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87ECA157-D6C8-4797-8064-8EA508551502}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87ECA157-D6C8-4797-8064-8EA508551502}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87ECA157-D6C8-4797-8064-8EA508551502}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87ECA157-D6C8-4797-8064-8EA508551502}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
