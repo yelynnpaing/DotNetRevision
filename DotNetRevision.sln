@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetRevision.ConsoleApp",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentRegApi", "StudentRegApi\StudentRegApi.csproj", "{87ECA157-D6C8-4797-8064-8EA508551502}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HostelRegApi", "HostelRegApi\HostelRegApi.csproj", "{B96C2758-CB01-42F4-91D4-FA5091C81D05}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{87ECA157-D6C8-4797-8064-8EA508551502}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{87ECA157-D6C8-4797-8064-8EA508551502}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{87ECA157-D6C8-4797-8064-8EA508551502}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B96C2758-CB01-42F4-91D4-FA5091C81D05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B96C2758-CB01-42F4-91D4-FA5091C81D05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B96C2758-CB01-42F4-91D4-FA5091C81D05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B96C2758-CB01-42F4-91D4-FA5091C81D05}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
