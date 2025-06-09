@@ -34,7 +34,7 @@ namespace WinFormCRUD
             using (var conn = new SqlConnection(connectionString))
             {
                 conn.Open();
-                string query = $"insert person (name, nrc, nationality) values ('{txtName.Text}', '{txtNrc.Text}', '{txtNationality.Text}')";
+                string query = $"INSERT INTO person (name, nrc, nationality) VALUES ('{txtName.Text}', '{txtNrc.Text}', '{txtNationality.Text}')";
                 using(var cmd = new SqlCommand(query, conn))
                 {
                     var affectRow = cmd.ExecuteNonQuery();
@@ -43,6 +43,7 @@ namespace WinFormCRUD
                         MessageBox.Show("Save successfull.");
                     }
                     formClear();
+                    DataLoad();
                 }
                 conn.Close();
             }
@@ -58,7 +59,7 @@ namespace WinFormCRUD
             using (var conn = new SqlConnection(connectionString))
             {
                 conn.Open();
-                string query = "Select * from person";
+                string query = "SELECT * FROM person";
                 SqlDataAdapter adapter = new SqlDataAdapter(query, conn);
                 DataSet ds = new DataSet();
                 DataTable dt = new DataTable();
