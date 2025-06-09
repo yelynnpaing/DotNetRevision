@@ -15,7 +15,7 @@ namespace ApiTest.Controllers
             using (var context = new DatabaseContext())
             {
                 
-                list= context.Person.ToList();                
+                list = context.Person.ToList();                
             }
             return Ok(list);
         }

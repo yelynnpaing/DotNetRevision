@@ -37,13 +37,14 @@
             this.personDGView = new System.Windows.Forms.DataGridView();
             this.saveBtn = new System.Windows.Forms.Button();
             this.clearBtn = new System.Windows.Forms.Button();
-            this.cBtn = new System.Windows.Forms.Button();
+            this.UpdateBtn = new System.Windows.Forms.Button();
             this.delBtn = new System.Windows.Forms.Button();
             this.exitBtn = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.txtNrc = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.personDGView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -127,14 +128,15 @@
             this.clearBtn.UseVisualStyleBackColor = true;
             this.clearBtn.Click += new System.EventHandler(this.clearBtn_Click);
             // 
-            // cBtn
+            // UpdateBtn
             // 
-            this.cBtn.Location = new System.Drawing.Point(580, 42);
-            this.cBtn.Name = "cBtn";
-            this.cBtn.Size = new System.Drawing.Size(107, 29);
-            this.cBtn.TabIndex = 10;
-            this.cBtn.Text = "Clear";
-            this.cBtn.UseVisualStyleBackColor = true;
+            this.UpdateBtn.Location = new System.Drawing.Point(580, 42);
+            this.UpdateBtn.Name = "UpdateBtn";
+            this.UpdateBtn.Size = new System.Drawing.Size(107, 29);
+            this.UpdateBtn.TabIndex = 10;
+            this.UpdateBtn.Text = "Update";
+            this.UpdateBtn.UseVisualStyleBackColor = true;
+            this.UpdateBtn.Click += new System.EventHandler(this.UpdateBtn_Click);
             // 
             // delBtn
             // 
@@ -144,6 +146,7 @@
             this.delBtn.TabIndex = 11;
             this.delBtn.Text = "Delete";
             this.delBtn.UseVisualStyleBackColor = true;
+            this.delBtn.Click += new System.EventHandler(this.delBtn_Click);
             // 
             // exitBtn
             // 
@@ -153,6 +156,7 @@
             this.exitBtn.TabIndex = 12;
             this.exitBtn.Text = "exit";
             this.exitBtn.UseVisualStyleBackColor = true;
+            this.exitBtn.Click += new System.EventHandler(this.exitBtn_Click);
             // 
             // label4
             // 
@@ -191,18 +195,29 @@
             this.txtNrc.Size = new System.Drawing.Size(187, 22);
             this.txtNrc.TabIndex = 16;
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(83, 48);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(20, 16);
+            this.label7.TabIndex = 17;
+            this.label7.Text = "ID";
+            this.label7.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1141, 537);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.txtNrc);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.exitBtn);
             this.Controls.Add(this.delBtn);
-            this.Controls.Add(this.cBtn);
+            this.Controls.Add(this.UpdateBtn);
             this.Controls.Add(this.clearBtn);
             this.Controls.Add(this.saveBtn);
             this.Controls.Add(this.personDGView);
@@ -232,13 +247,14 @@
         private System.Windows.Forms.DataGridView personDGView;
         private System.Windows.Forms.Button saveBtn;
         private System.Windows.Forms.Button clearBtn;
-        private System.Windows.Forms.Button cBtn;
+        private System.Windows.Forms.Button UpdateBtn;
         private System.Windows.Forms.Button delBtn;
         private System.Windows.Forms.Button exitBtn;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtNrc;
+        private System.Windows.Forms.Label label7;
     }
 }
 
